@@ -1,7 +1,7 @@
 {
-  "name": "seo-content-analyzer",
-  "version": "1.2.7",
-  "description": "",
+  "name": "@spectnullbyte/seo-content-analyzer",
+  "version": "1.2.1",
+  "description": "A fork from seo-content-analyzer v1.2.7",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

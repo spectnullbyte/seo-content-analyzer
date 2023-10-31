@@ -1,16 +1,14 @@
 # SEO CONTENT ANALYZER
 
-seo content check has never been easier :D
+This package performs checks against a given HTML text input, and it will provide a SEO score based on several criteria
 
-## Documentation
-
-[Documentation](https://github.com/wahyunurarizky/seo-content-analyzer)
+Based on the package wahyunurarizky/seo-content-analyzer, this fork adds additional checks that are not part of the original package. The main changes are related to text readability which can be a direct, or indirect, factor to better SEO results.
 
 ## Usage/Examples
 
 ```javascript
 //NODEJS
-import SEOContentAnalyzer from "seo-content-analyzer";
+import SEOContentAnalyzer from "@spectnullbyte/seo-content-analyzer";
 const result = SEOContentAnalyzer({
   keyword: "your-keyword-here",
   title: "your-title-here",
@@ -19,7 +17,7 @@ const result = SEOContentAnalyzer({
 });
 
 //JAVSASCRIPT
-import SEOContentAnalyzer from "seo-content-analyzer/dist/client";
+import SEOContentAnalyzer from "@spectnullbyte/seo-content-analyzer/dist/client";
 const result = SEOContentAnalyzer({
   keyword: "your-keyword-here",
   title: "your-title-here",
@@ -42,7 +40,3 @@ const result = SEOContentAnalyzer(
 ## Contributing
 
 Contributions are always welcome!
-
-See `readme.md` for ways to get started.
-
-Please adhere to this project's `code of conduct`.

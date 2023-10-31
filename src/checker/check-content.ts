@@ -295,7 +295,6 @@ export class CheckContent extends SectionChecker {
     let result: boolean
     sentences.forEach((sentence) => {
       result = usingPassiveVoice(sentence)
-      console.log(result)
       if (result) {
         numberOfPassiveSentences += 1
       }

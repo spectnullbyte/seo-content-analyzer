@@ -141,7 +141,6 @@ export const longSectionExists = (elements: Array<Element>): boolean => {
 }
   
 export const usingPassiveVoice = (text: string) => {
-  console.log(text)
   const passiveTensePatterns = [
     ['VBZ', 'VBN'],
     ['VBP', 'VBN'],
@@ -175,7 +174,6 @@ export const usingPassiveVoice = (text: string) => {
     .smooth()
     .tags;
 
-    console.log(tags)
   let indexOfPattern: number
   passiveTensePatterns.forEach((pattern) => {
     for (let indexOfTags = 0; indexOfTags < tags.length-pattern.length+1; indexOfTags++) {
@@ -187,12 +185,9 @@ export const usingPassiveVoice = (text: string) => {
           && 
           (words[indexOfTags+indexOfPattern] == 'have' || words[indexOfTags+indexOfPattern] == 'has')
           ) {
-            console.log('inside if')
             break
           }
-        // console.log('indexOfPattern : ' + indexOfPattern)
         if (indexOfPattern == pattern.length-1) {
-          // console.log('indexOfPattern == pattern.length')
           passiveVoice = true
         }
         indexOfPattern++
